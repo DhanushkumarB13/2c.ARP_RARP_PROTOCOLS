@@ -30,7 +30,7 @@ s=socket.socket()
 s.bind(('localhost',8000)) 
 s.listen(5) 
 c,addr=s.accept() 
-address={"165.165.80.80":"6A:08:AA:C2","165.165.79.1":"8A:BC:E3:FA"}; 
+address={"255.255.255.240":"68:34:21:81:42:EB","172.20.10.2":"8A:BC:E3:FA"}; 
 while True: 
             ip=c.recv(1024).decode() 
             try: 
@@ -72,7 +72,7 @@ s=socket.socket()
 s.bind(('localhost',9000)) 
 s.listen(5) 
 c,addr=s.accept() 
-address={"6A:08:AA:C2":"192.168.1.100","8A:BC:E3:FA":"192.168.1.99"}; 
+address={"68:34:21:81:42:EB":"255.255.255.240","8A:BC:E3:FA":"192.168.1.99"}; 
 while True: 
             ip=c.recv(1024).decode() 
             try: 
